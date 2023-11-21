@@ -1,20 +1,26 @@
-*
-{
-    margin: 0;
-    padding: 0;
+html {
+	height: 100%;
+	padding: 30px;
 }
 
-html,
-body
-{
-    height: 100vh;
-    font-family: 'Poppins';
+body {
+	background: #111;
+	display: flex;
+	height: 100%;
+	position: relative;
 }
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
+canvas {
+	/* border: 1px solid #222; */
+	/* animation: spin 14s linear infinite; */
+	margin: auto;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate3d(1, 1, 1, -180deg)
+	}
+	to {
+		transform: rotate3d(1, 1, 1, 180deg)
+	}
 }
